@@ -2,7 +2,7 @@
   "name": "chat-rooms",
   "version": "1.0.0",
   "description": "a server with chat rooms",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
