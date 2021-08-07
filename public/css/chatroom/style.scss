@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.pusher {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#users-container {
+    // padding: 10px;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+}
+
+#send-container {
+    padding: 20px;
+    background-color: #f8f9fc;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 0.1);
+}
+
+#message-container {
+    width: 95%;
+    height: 90%;
+    padding: 40px 140px 40px 140px;
+    overflow: auto;
+}
+
+.alert {
+    margin-top: 10px;
+    text-align: center;
+    color: grey;
+  }
+  
+  .message {
+    margin-top: -20px;
+    padding: 15px;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+  
+  .me {
+    background: linear-gradient(to right, #7142E9, #B236F4);
+    color: white;  
+
+    border-radius: 15px 0px 15px 15px;
+    color: white;
+    float: right;
+  }
+  
+  .other {
+    border-radius: 15px;
+    background: #E9EFF5;
+    float: left;
+  }
+  
+  .myName {
+    float: right;
+  }
+  
+  .otherName {
+    float: left;
+  }
+
+  .name {
+      margin-top: 25px;
+      color: grey;
+  }
+
+.me a {
+      text-decoration: underline;
+      color: white;
+}
+
+.other a {
+    color: black;
+    text-decoration: underline;
+}
