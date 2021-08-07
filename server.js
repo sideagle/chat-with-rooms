@@ -35,5 +35,5 @@ app.get('/invite', (req, res) => {
     res.render('invite', { roomId: req.query.room })
 })
 
-server.listen(PORT)
+server.listen(process.env.PORT)
 
