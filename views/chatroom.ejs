@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <base href="http://localhost:3000/">
+
+    <script>
+        const ROOMID = '<%=roomId%>';
+        let username = '<%=name%>';
+        console.log(ROOMID, username);
+    </script>
+
+
+    <script defer src="https://chat-app-server.sideagle.repl.co/socket.io/socket.io.js"></script>
+    <script defer src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+
+
+    <script src="semantic/semantic.min.js"></script>
+    <script defer src="js/chatroom/append.js"></script>
+    <script defer src="js/chatroom/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/c01ca3da26.js" crossorigin="anonymous"></script>
+
+
+    <!-- <link rel="stylesheet" href="semantic/semantic.min.css"> -->
+    <link rel="stylesheet" href="css/chatroom/style.css">
+
+</head>
+<body>
+    <div class="ui sidebar inverted vertical menu" style="padding:20px;width:400px;text-align: center;">
+        <br>
+        <h2 class="ui inverted header">Invite a friend</h2>
+        <br>
+        <div class="ui action input" style="width:100%;">
+            <input type="text" id="emailField" placeholder="ronaldweasly@hogwarts.com">
+            <button class="ui primary button"><i class="envelope icon"></i> &nbsp send email &nbsp</button>
+        </div>
+        <div class="ui inverted horizontal divider">
+            OR
+        </div>
+        <div class="ui action input" style="width:100%;">
+            <input type="text" readonly="" id="inviteField">
+            <button class="ui primary button" onclick="copy()">copy invite link</button>
+        </div>
+      </div>
+    
+    <div class="pusher">
+
+
+        <div id="app-container">
+            <div id="message-container"></div>
+            <div id="send-container">
+
+                <div class="ui input" style="width: 60%;">
+                    <input  type="text" id="message-input" autocomplete="off" placeholder="Enter your message here" style="background: white; height: 45px; border-radius: 30px; " maxlength="148">
+                    <button class="ui button" type="submit" id="send-button" style="background: #427bff; color: white; margin-left: 10px; border-radius: 30px;">send</button>
+                </div>
+                <button class="ui button" id="inviteButton" style="height:45px;margin-left: 10px;">
+                    <i class="user plus icon"></i>
+                    invite
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
