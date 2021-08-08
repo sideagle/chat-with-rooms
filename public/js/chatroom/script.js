@@ -1,4 +1,4 @@
-const socket = io('https://chat-app-server.sideagle.repl.co');
+const socket = io('https://socket-server123.herokuapp.com/');
 
 const messageContainer = document.querySelector('#message-container');
 const messageButton = document.querySelector('#send-button');
