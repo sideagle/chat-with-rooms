@@ -5,7 +5,7 @@ const messageButton = document.querySelector('#send-button');
 const messageInput = document.querySelector('#message-input');
 const userContainer = document.querySelector('#user-container');
 
-const inviteLink = `http://localhost:3000/invite/?room=${ROOMID}`;
+const inviteLink = `https://siddhant_chat_app.herokuapp.com/invite/?room=${ROOMID}`;
 document.querySelector('#inviteField').value = inviteLink;
 
 username = titleCaps(username);
